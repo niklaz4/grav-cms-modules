@@ -1,0 +1,33 @@
+title: Texto Modular
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content:
+          type: tab
+          title: Conteúdo
+          fields:
+            header.title:
+              type: text
+              label: UFOP
+              placeholder: 'Universidade Federal de Ouro Preto'
+            content:
+              type: editor
+              label: Texto
+              validate:
+                required: true
+              description: |
+                ### Lorem Ipsum
+                **Lorem ipsum dolor sit amet**, *consectetur adipiscing elit*. Proin ullamcorper nisl at nunc tristique, vel dignissim elit malesuada. Ut venenatis:
+
+                1. **Maecenas** nec metus at ipsum facilisis dictum.
+                2. **Vestibulum** at quam et enim *lacinia tincidunt*.
+                3. Fusce sit amet urna eget nibh **sagittis** luctus.
+
+                - Ut *lobortis risus* nec libero laoreet, in luctus ipsum varius.
+                - **Praesent** scelerisque urna nec arcu vestibulum, et varius purus viverra.
+
+                #### Citations
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum nisl ut ex varius, quis pellentesque risus congue.”

@@ -1,0 +1,14 @@
+name: "divider"
+title: "Módulo de Separador"
+description: "Insere divisores visuais entre seções da página."
+fields:
+  - name: "estilo_divisor"
+    type: "select"
+    label: "Estilo do Divisor"
+    options:
+      - value: "simples"
+        label: "Simples"
+      - value: "dupla"
+        label: "Dupla"
+      - value: "pontilhada"
+        label: "Pontilhada"

@@ -1,0 +1,10 @@
+<div class="testemunhos">
+  {% for testemunho in testemunhos %}
+    <div class="testemunho">
+      <img src="{{ testemunho.imagem }}" alt="Foto de {{ testemunho.nome }}" class="testemunho-imagem">
+      <h4 class="testemunho-nome">{{ testemunho.nome }}</h4>
+      <p class="testemunho-cargo">{{ testemunho.cargo }}</p>
+      <blockquote class="testemunho-depoimento">{{ testemunho.depoimento }}</blockquote>
+    </div>
+  {% endfor %}
+</div>

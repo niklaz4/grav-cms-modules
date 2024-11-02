@@ -1,0 +1,40 @@
+title: Módulo de Banner
+'@extends':
+    type: modular
+    context: blueprints://pages
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+
+            fields:
+                content:
+                    type: tab
+                    title: Conteúdo
+
+                    fields:
+                        header.title:
+                            type: text
+                            label: Título
+
+                        header.subtitle:
+                            type: text
+                            label: Subtítulo (Opcional)
+
+                        header.background:
+                            type: file
+                            label: Imagem/Vídeo de Fundo
+                            destination: 'self@'
+                            accept:
+                                - image/*
+                                - video/*
+
+                        header.cta_text:
+                            type: text
+                            label: Texto do Botão CTA
+
+                        header.cta_link:
+                            type: text
+                            label: URL do Botão CTA

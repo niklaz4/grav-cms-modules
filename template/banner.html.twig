@@ -1,0 +1,10 @@
+<section class="module-banner" style="background-image: url('{{ page.media[header.background].url }}');">
+    <div class="content">
+        <h1>{{ header.title }}</h1>
+        {% if header.subtitle %}
+            <h3>{{ header.subtitle }}</h3>
+        {% endif %}
+        
+        <a href="{{ header.cta_link }}" class="button">{{ header.cta_text }}</a>
+    </div>
+</section>

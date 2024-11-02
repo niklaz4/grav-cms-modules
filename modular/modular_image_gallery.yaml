@@ -1,0 +1,14 @@
+gallery:
+  label: "Galeria de Imagens"
+  type: repeater
+  fields:
+    images:
+      type: object
+      label: "Imagens"
+      fields:
+        url:
+          type: text
+          label: "URL da Imagem"
+        alt:
+          type: text
+          label: "Texto Alternativo"

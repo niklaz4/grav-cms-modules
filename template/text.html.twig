@@ -1,0 +1,10 @@
+<section class="modular-text">
+    {% if page.header.title %}
+        <header class="major">
+            <h2>{{ page.header.title }}</h2>
+        </header>
+    {% endif %}
+    <div class="content">
+        {{ content|raw }}
+    </div>
+</section>

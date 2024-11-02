@@ -1,0 +1,17 @@
+<div class="accordion">
+  {% for item in items %}
+    <div class="accordion-item">
+      <h3 class="accordion-titulo" onclick="toggleAccordion('{{ loop.index }}')">{{ item.titulo }}</h3>
+      <div id="accordion-content-{{ loop.index }}" class="accordion-conteudo">
+        <p>{{ item.conteudo }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+  function toggleAccordion(index) {
+    var content = document.getElementById('accordion-content-' + index);
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  }
+</script>

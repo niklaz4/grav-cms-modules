@@ -1,0 +1,7 @@
+embedded_video:
+  label: "Vídeo Incorporado"
+  type: object
+  fields:
+    video_url:
+      type: text
+      label: "URL do Vídeo"

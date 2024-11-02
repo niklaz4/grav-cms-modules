@@ -1,0 +1,11 @@
+<div class="profile">
+    <img src="{{ item.foto }}" alt="{{ item.nome }}" class="profile-photo">
+    <h3>{{ item.nome }}</h3>
+    <p class="job-title">{{ item.titulo }}</p>
+    <p class="biography">{{ item.biografia }}</p>
+    <div class="social-links">
+        {% for link in item.links_rede_social %}
+            <a href="{{ link.url }}" target="_blank">{{ link.url }}</a>
+        {% endfor %}
+    </div>
+</div>

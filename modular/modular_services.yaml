@@ -1,0 +1,16 @@
+context:
+  label: "Lista de Serviços/Recursos"
+  fields:
+    servicos:
+      type: list
+      label: "Lista de Serviços"
+      fields:
+        icone:
+          type: image
+          label: "Ícone do Serviço"
+        titulo:
+          type: text
+          label: "Título do Serviço"
+        descricao:
+          type: textarea
+          label: "Descrição do Serviço"

@@ -1,0 +1,19 @@
+context:
+  label: "Testemunho/Depoimento"
+  fields:
+    testemunhos:
+      type: list
+      label: "Lista de Testemunhos"
+      fields:
+        nome:
+          type: text
+          label: "Nome do Cliente"
+        imagem:
+          type: image
+          label: "Foto do Cliente"
+        cargo:
+          type: text
+          label: "Cargo do Cliente"
+        depoimento:
+          type: textarea
+          label: "Depoimento"

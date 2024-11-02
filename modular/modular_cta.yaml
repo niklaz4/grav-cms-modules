@@ -1,0 +1,10 @@
+cta_button:
+  label: "Botão de Chamada para Ação"
+  type: object
+  fields:
+    button_text:
+      type: text
+      label: "Texto do Botão"
+    button_url:
+      type: text
+      label: "URL do Botão"

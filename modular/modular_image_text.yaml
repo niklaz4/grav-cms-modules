@@ -1,0 +1,39 @@
+title: Módulo de Imagem com Texto
+'@extends':
+    type: modular
+    context: blueprints://pages
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+
+            fields:
+                content:
+                    type: tab
+                    title: Conteúdo
+
+                    fields:
+                        header.title:
+                            type: text
+                            label: Título (Opcional)
+
+                        header.image:
+                            type: file
+                            label: Imagem
+                            destination: 'self@'
+                            accept:
+                                - image/*
+
+                        header.text:
+                            type: textarea
+                            label: Texto
+
+                        header.link:
+                            type: text
+                            label: URL do Link (Opcional)
+
+                        header.link_text:
+                            type: text
+                            label: Texto do Link (Opcional)

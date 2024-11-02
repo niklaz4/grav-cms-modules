@@ -1,0 +1,17 @@
+context:
+  label: "Separador"
+  fields:
+    estilo:
+      type: select
+      label: "Estilo do Separador"
+      options:
+        - linha
+        - pontilhado
+        - duplo
+    cor:
+      type: color
+      label: "Cor do Separador"
+    espessura:
+      type: text
+      label: "Espessura do Separador"
+      default: "1px"

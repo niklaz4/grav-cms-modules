@@ -1,0 +1,13 @@
+context:
+  label: "Accordion"
+  fields:
+    items:
+      type: list
+      label: "Itens do Accordion"
+      fields:
+        titulo:
+          type: text
+          label: "Título do Item"
+        conteudo:
+          type: textarea
+          label: "Conteúdo do Item"

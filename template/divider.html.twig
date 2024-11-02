@@ -1,0 +1,9 @@
+<div class="divider {{ item.estilo_divisor }}">
+    {% if item.estilo_divisor == 'simples' %}
+        <hr class="divider-simple">
+    {% elseif item.estilo_divisor == 'dupla' %}
+        <hr class="divider-double">
+    {% elseif item.estilo_divisor == 'pontilhada' %}
+        <hr class="divider-dotted">
+    {% endif %}
+</div>

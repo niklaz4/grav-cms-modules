@@ -1,0 +1,9 @@
+<div class="servicos-lista">
+  {% for servico in servicos %}
+    <div class="servico-item">
+      <img src="{{ servico.icone }}" alt="{{ servico.titulo }}" class="servico-icone">
+      <h4 class="servico-titulo">{{ servico.titulo }}</h4>
+      <p class="servico-descricao">{{ servico.descricao }}</p>
+    </div>
+  {% endfor %}
+</div>

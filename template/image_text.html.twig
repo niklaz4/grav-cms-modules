@@ -1,0 +1,19 @@
+<section class="module-image-text">
+    {% if header.image %}
+        <div class="image">
+            <img src="{{ page.media[header.image].url }}" alt="{{ header.title }}">
+        </div>
+    {% endif %}
+    
+    {% if header.title %}
+        <h2>{{ header.title }}</h2>
+    {% endif %}
+
+    {% if header.text %}
+        <p>{{ header.text }}</p>
+    {% endif %}
+
+    {% if header.link and header.link_text %}
+        <a href="{{ header.link }}" class="button">{{ header.link_text }}</a>
+    {% endif %}
+</section>
